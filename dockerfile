@@ -9,5 +9,5 @@ ADD . /var/www/html
 #ENV APACHE_LOG_DIR /var/log/apache2
 
 
-ENTRYPOINT ["/usr/sbin/apache2"]
-CMD ["-D", "FOREGROUND"]
+#ENTRYPOINT ["/usr/sbin/apache2"]
+CMD apachectl -D FOREGROUND
